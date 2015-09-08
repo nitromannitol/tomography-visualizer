@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  width:100%;
+}
+
+body {
+  font-size: 13px;
+  background-color: #fcfcfc;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  min-width: 1000px;
+  min-height: 760px;
+  position:absolute;
+}
+
+.demo-container{
+  min-width: 300px;
+  min-height: 300px;
+}
+
+#lineIntegrals-container{
+  top:100px;
+  width: 100px;
+  height: 200px;
+  position:absolute;
+  float:left;
+}
+
+#target-container{
+  top:100px;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  left:360px;
+  float:left;
+}
+
+#true-target-container{
+  width: 100px;
+  height: 200px;
+  position:absolute;
+  float:left;
+  left:680px;
+  top:100px;
+  float:left;
+}
+
+
+#lineIntegralsButton{
+  top:10px;
+  left:10px;
+  position:relative;
+  width: 200px;
+}
+#lines-plot{
+  position:relative;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+#heatmap{
+  position: absolute;
+  left: 300px;
+  top: 20px;
+  width: 40px;
+  height: 300px;
+}
+
+#lambdaSlider{
+  position:absolute;
+  top: 330px;
+  width: 300px;
+  left:0px;
+}
+
+#targetReconstruction{
+  position:absolute;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+
+
+}
+
+#trueTargetBox{
+  position:absolute;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;  
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+}
+
+
+#reconstructButton{
+    display: none;
+}
+
+#newTargetButtonContainer{
+  position:absolute;
+  top:0px;
+  left:20px;
+}
+#trueTargetButton{
+  position:relative;
+  top: 10px;
+  left: 250px;
+  background-color:#0000FF;
+    display:none;
+}
+#newTargetButton{
+  position:absolute;
+  top:27px;
+  left: 250px;
+  background-color:#0000FF;
+}
+
+#hidden_target {
+  display:none;
+}
+
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+}
+
+footer {
+  position: absolute;
+  font-size: 13px;
+  margin-bottom: 5px;
+  bottom: 0;
+  border-top: 1px solid #ccc;;
+  width: inherit;
+}
