@@ -44,11 +44,6 @@ on a logarithmic scale between `0.1` and `100`.
 | [`normalizeImages.py`](normalizeImages.py) | resizes full-size `.tif` images to 60 × 60 PNG; written for the legacy `import Image` form of the Python Imaging Library, and it reads `full_size_imgs/*.tif` and writes `img2/` |
 | [`d3.min.js`](d3.min.js), [`numeric-1.2.6.js`](numeric-1.2.6.js), [`jquery.flot.js`](jquery.flot.js) | bundled third-party libraries (see Third-party files); `numeric-1.2.6.js` and `jquery.flot.js` are loaded by the page, `d3.min.js` is not |
 
-## Authors and citation
-
-The code is by **Ahmed Bou-Rabee**; the bundled libraries are by their own authors, named
-under Third-party files.
-
 ## Third-party files
 
 The bundled third-party files keep their own licences and notices:
