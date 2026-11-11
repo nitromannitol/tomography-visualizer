@@ -37,31 +37,14 @@ on a logarithmic scale between `0.1` and `100`.
 | [`tomography.html`](tomography.html), [`tomography.css`](tomography.css) | the page and its style |
 | [`tomography.js`](tomography.js) | measurement generation, reconstruction and plots |
 | [`tomo-linalg.js`](tomo-linalg.js) | small matrix helpers (`eye`, `zeros`, `horzcat`, `vertcat`, …) |
-| [`range-slider.js`](range-slider.js), [`range-slider.css`](range-slider.css) | slider widget (`range-slider.js` is third party, see License) |
+| [`range-slider.js`](range-slider.js), [`range-slider.css`](range-slider.css) | slider widget (`range-slider.js` is third party) |
 | [`img/`](img/) | the target images `img1.png` to `img22.png` that the page picks from, and `heatmap.png`, the colour legend |
 | [`generateHeatMapLegend.jl`](generateHeatMapLegend.jl) | Julia script (Plotly heat map with a custom colour scale) for the legend; written for a Julia release before 1.0 and not maintained |
 | [`normalizeImages.py`](normalizeImages.py) | resizes full-size `.tif` images to 60 × 60 PNG; written for the legacy `import Image` form of the Python Imaging Library, and it reads `full_size_imgs/*.tif` and writes `img2/` |
-| [`d3.min.js`](d3.min.js), [`numeric-1.2.6.js`](numeric-1.2.6.js), [`jquery.flot.js`](jquery.flot.js) | bundled third-party libraries (see License); `numeric-1.2.6.js` and `jquery.flot.js` are loaded by the page, `d3.min.js` is not |
+| [`d3.min.js`](d3.min.js), [`numeric-1.2.6.js`](numeric-1.2.6.js), [`jquery.flot.js`](jquery.flot.js) | bundled third-party libraries; `numeric-1.2.6.js` and `jquery.flot.js` are loaded by the page, `d3.min.js` is not |
 
 ## Authors and citation
 
-The code is by **Ahmed Bou-Rabee**; the bundled libraries are by their own authors, named
-under License.
-
-## License
-
-The code written for this repository is licensed under the Apache License 2.0; see
-[`LICENSE`](LICENSE). The bundled third-party files keep their own licences and notices, and
-the Apache License does not replace them:
-
-- [`d3.min.js`](d3.min.js) is d3 version 3.3.0 by Mike Bostock, distributed upstream under
-  the BSD 3-clause licence.
-- [`numeric-1.2.6.js`](numeric-1.2.6.js) is numeric.js 1.2.6 by Sébastien Loisel, distributed
-  upstream under the MIT licence. The file embeds a seeded random number generator by David Bau
-  whose BSD licence notice is kept in the file.
-- [`jquery.flot.js`](jquery.flot.js) is Flot 0.8.3, "Copyright (c) 2007-2014 IOLA and Ole
-  Laursen. Licensed under the MIT license." The notice is kept in the file header, which also
-  contains the jQuery color helpers plugin by Ole Laursen, released under the MIT licence.
-- [`range-slider.js`](range-slider.js) is the range slider of Taufik Nurrohman, dedicated
-  to the public domain (the notice is kept in the file header).
-
+The code is by **Ahmed Bou-Rabee**; the bundled libraries are by their own authors: d3 by
+Mike Bostock, numeric.js by Sébastien Loisel, Flot by IOLA and Ole Laursen, and the range
+slider by Taufik Nurrohman.
