@@ -40,14 +40,13 @@ on a logarithmic scale between `0.1` and `100`.
 | [`range-slider.js`](range-slider.js), [`range-slider.css`](range-slider.css) | slider widget (`range-slider.js` is third party, see License) |
 | [`img/`](img/) | the target images `img1.png` to `img22.png` that the page picks from, and `heatmap.png`, the colour legend |
 | [`generateHeatMapLegend.jl`](generateHeatMapLegend.jl) | Julia script (Plotly heat map with a custom colour scale) for the legend; written for a Julia release before 1.0 and not maintained |
-| [`normalizeImages.py`](normalizeImages.py) | resizes full-size `.tif` images to 60 × 60 PNG; written for the legacy `import Image` form of the Python Imaging Library, and it expects a `full_size_imgs/` directory that is not part of this repository |
+| [`normalizeImages.py`](normalizeImages.py) | resizes full-size `.tif` images to 60 × 60 PNG; written for the legacy `import Image` form of the Python Imaging Library, and it reads `full_size_imgs/*.tif` and writes `img2/` |
 | [`d3.min.js`](d3.min.js), [`numeric-1.2.6.js`](numeric-1.2.6.js), [`jquery.flot.js`](jquery.flot.js) | bundled third-party libraries (see License); `numeric-1.2.6.js` and `jquery.flot.js` are loaded by the page, `d3.min.js` is not |
 
 ## Authors and citation
 
-The code was written by **Ahmed Bou-Rabee**, the author of every commit in the git history.
-The bundled libraries are by their own authors, named under License. There is no associated
-paper, so the repository has no `CITATION.cff`.
+The code is by **Ahmed Bou-Rabee**; the bundled libraries are by their own authors, named
+under License.
 
 ## License
 
@@ -56,7 +55,7 @@ The code written for this repository is licensed under the Apache License 2.0; s
 the Apache License does not replace them:
 
 - [`d3.min.js`](d3.min.js) is d3 version 3.3.0 by Mike Bostock, distributed upstream under
-  the BSD 3-clause licence; the minified file carries no notice of its own.
+  the BSD 3-clause licence.
 - [`numeric-1.2.6.js`](numeric-1.2.6.js) is numeric.js 1.2.6 by Sébastien Loisel, distributed
   upstream under the MIT licence. The file embeds a seeded random number generator by David Bau
   whose BSD licence notice is kept in the file.
@@ -66,5 +65,3 @@ the Apache License does not replace them:
 - [`range-slider.js`](range-slider.js) is the range slider of Taufik Nurrohman, dedicated
   to the public domain (the notice is kept in the file header).
 
-The images in [`img/`](img/) are sample targets whose source is not recorded in this
-repository.
